@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'website', siteName: SITE_NAME, images: [{ url: image, width: 1200, height: 630, alt: 'Arrow Flow: slide the arrows, reveal the picture.' }],
   },
   twitter: { card: 'summary_large_image', images: [image] },
-  // PLACEHOLDER: once the iOS listing exists add  itunes: { appId: 'YOUR_APP_ID' }  for Safari's smart banner.
+  // Once the iOS listing exists, add  itunes: { appId: 'YOUR_APP_ID' }  for Safari's smart banner.
 };
 export const viewport: Viewport = { themeColor: '#06060E', width: 'device-width', initialScale: 1, viewportFit: 'cover' };
 

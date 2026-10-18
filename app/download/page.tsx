@@ -18,7 +18,6 @@ export default function DownloadPage() {
       <p className="lead">Arrow Flow is made for iPhone and Android, in portrait, and works offline.</p>
       <div id="stores" style={{ scrollMarginTop: '100px' }}><StoreButtons /></div>
       <OsHint />
-      <p className="notice" style={{ marginTop: '20px' }}><strong>PLACEHOLDER:</strong> the store buttons show "Soon" until the real listing URLs are added in <code>src/config.ts</code>. No download links exist yet.</p>
     </div>
     <div className="reveal">
       <div className="phone phone--lg phone--float"><Raw name="home" alt="Arrow Flow home screen with the logo and a Continue button" /></div>
@@ -30,8 +29,8 @@ export default function DownloadPage() {
   <div className="wrap grid grid-2">
     <div className="panel reveal">
       <h2 style={{ fontSize: 'var(--fs-lg)' }}>On a computer?</h2>
-      <p>Scan the code with your phone's camera to open the store page.</p>
-      <div className="qr" role="img" aria-label="QR code placeholder">PLACEHOLDER<br />QR code goes here once the store URL exists</div>
+      <p>Scan the code with your phone's camera to open this page on your phone and pick your store.</p>
+      <div className="qr-box"><img src="/img/qr-download.svg" width={168} height={168} alt="QR code that opens the Arrow Flow download page: arrowflow.ahmedbuildapps.com/download" /></div>
     </div>
     <div className="panel reveal" data-d="1">
       <h2 style={{ fontSize: 'var(--fs-lg)' }}>Device requirements</h2>
@@ -39,12 +38,12 @@ export default function DownloadPage() {
         <table style={{ minWidth: '0' }}>
           <caption className="sr-only">Device requirements</caption>
           <tbody>
-            <tr><th scope="row">iPhone / iPad</th><td>iOS 12.0 or later (from the project's deployment target)</td></tr>
-            <tr><th scope="row">Android</th><td><span className="placeholder-tag">PLACEHOLDER</span> minimum Android version to be confirmed</td></tr>
+            <tr><th scope="row">iPhone / iPad</th><td>iOS 12.0 or later</td></tr>
+            <tr><th scope="row">Android</th><td>Android 5.0 (Lollipop) or later</td></tr>
             <tr><th scope="row">Orientation</th><td>Portrait</td></tr>
             <tr><th scope="row">Connection</th><td>Not required. Plays offline</td></tr>
             <tr><th scope="row">Size</th><td>Around 10&nbsp;MB on Android (measured release build)</td></tr>
-            <tr><th scope="row">Price</th><td><span className="placeholder-tag">PLACEHOLDER</span> confirm with the store listing</td></tr>
+            <tr><th scope="row">Price</th><td>Free to download</td></tr>
           </tbody>
         </table>
       </div>

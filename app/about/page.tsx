@@ -68,7 +68,7 @@ export default function AboutPage() {
       <li>Others are based on icons from <a href="https://game-icons.net" rel="noopener">game-icons.net</a> by Delapouite, Caro-Asercion and others, licensed <a href="https://creativecommons.org/licenses/by/3.0/" rel="noopener">CC BY 3.0</a>.</li>
       <li>Typeface: <strong>Inter</strong>, SIL Open Font License 1.1.</li>
     </ul>
-    <p className="notice"><strong>Before launch:</strong> check the licence of every entry in the game's <code>assets/shapes/CREDITS.txt</code> and keep this list in line with it.</p>
+    <p className="muted" style={{ fontSize: 'var(--fs-sm)' }}>Questions about attribution? Email <EmailLink />.</p>
   </div>
 </section>
     </>

@@ -441,3 +441,5 @@ select option{background:#141422}
 .store-badge--google .soon{top:4px;right:4px}
 .site-footer .store-badge{--bh:40px}
 .stores-soon{flex-basis:100%;margin:0;font-size:var(--fs-xs);font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.qr-box{display:inline-block;padding:10px;border-radius:var(--r-sm);background:#fff;box-shadow:var(--sh-1)}
+.qr-box img{display:block;width:168px;height:168px}
