@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Raw } from '@/components/Pic';
 import { OsHint, StoreButtons } from '@/components/StoreButtons';
 
-export const metadata = pageMeta("Download · Arrow Flow", "Download Arrow Flow for iPhone and Android. A calm silhouette arrow puzzle with 100 handcrafted levels and no timers.", "/download/");
+export const metadata = pageMeta("Download · Arrow Flow", "Download Arrow Flow for iPhone and Android. A calm silhouette arrow puzzle with unlimited silhouettes and no timers.", "/download/");
 
 export default function DownloadPage() {
   return (
@@ -55,7 +55,7 @@ export default function DownloadPage() {
   <div className="wrap">
     <div className="section-head center reveal up"><span className="eyebrow">What you get</span><h2>Everything in one install</h2></div>
     <div className="grid grid-3">
-      <div className="panel reveal"><h3>100 levels</h3><p>Handcrafted animals and objects across four tiers.</p></div>
+      <div className="panel reveal"><h3>Unlimited silhouettes</h3><p>Handcrafted animals and objects across four tiers.</p></div>
       <div className="panel reveal" data-d="1"><h3>No timers</h3><p>Take your time. Nothing is counting down.</p></div>
       <div className="panel reveal" data-d="2"><h3>No account</h3><p>Open it and play. Progress is saved on your phone.</p></div>
     </div>

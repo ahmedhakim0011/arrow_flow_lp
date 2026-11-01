@@ -36,7 +36,7 @@ export default function FaqPage() {
     <div className="faq-group">
       <h2 style={{ fontSize: 'var(--fs-lg)' }}>Levels and progress</h2>
       <div className="faq">
-        <details><summary>How many levels are there?</summary><div><p>100 handcrafted silhouettes, from the Hammer (level 1, 100 arrows) to the Hourglass (level 100, 438 arrows).</p></div></details>
+        <details><summary>How many levels are there?</summary><div><p>Unlimited silhouettes, from the simple Hammer in the first level to towering boards with hundreds of arrows. New pictures keep coming.</p></div></details>
         <details><summary>Is there an easy mode?</summary><div><p>Arrow Flow starts on the Hard tier and builds up through Expert, Master and Nightmare. The first levels are the gentlest, and the hint is there when you need it.</p></div></details>
         <details><summary>What are gems and the daily streak?</summary><div><p>Winning a level earns gems. The daily streak tracks the days you play across a weekly strip.</p></div></details>
         <details><summary>Will new levels be added?</summary><div><p>We'd love to, but we don't have a schedule to share yet. Follow this site for news.</p></div></details>

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image', images: [image] },
   // Once the iOS listing exists, add  itunes: { appId: 'YOUR_APP_ID' }  for Safari's smart banner.
 };
-export const viewport: Viewport = { themeColor: '#06060E', width: 'device-width', initialScale: 1, viewportFit: 'cover' };
+export const viewport: Viewport = { themeColor: '#F7F2EC', width: 'device-width', initialScale: 1, viewportFit: 'cover' };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

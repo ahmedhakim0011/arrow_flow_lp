@@ -90,6 +90,6 @@ Tier enamel colours (`gamee_assesst/README.md`): Hard `#3F8CFF`, Expert `#8A5BFF
 | Studio name, founder, address, contact email | Marked `[PLACEHOLDER]` on About, Contact, Privacy and Terms. |
 | Final domain | `https://YOUR-DOMAIN.example` is used in canonical, OG, sitemap and schema. Change `SITE_URL` in `tools/build.py` and rebuild. |
 | Legal text | Privacy and Terms are drafts and need legal review. |
-| Min Android version, final app ID | The app ID is still `com.example.anime_arrow_maze` (see `STORE_CHECKLIST.md`). Not shown on the site. |
+| Min Android version, final app ID | `com.ahmedbuildapps.arrowflow.maze` (see `STORE_CHECKLIST.md`). Not shown on the site. |
 | Gameplay video | Trailer mp4 is included. It loads only on click (`preload="none"`). |
 | Shape attribution | Silhouette sources are CC-BY (Twemoji, game-icons.net). Credits are listed on About, as `assets/shapes/CREDITS.txt` requires. |

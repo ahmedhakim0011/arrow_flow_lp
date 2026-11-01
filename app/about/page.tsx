@@ -4,8 +4,9 @@ import Link from 'next/link';
 import { EmailLink } from '@/components/EmailLink';
 import { MAKER } from '@/config';
 
-export const metadata = pageMeta("About · Arrow Flow", "The idea behind Arrow Flow, a silhouette arrow puzzle where the shape is the level. Design principles, studio info and credits.", "/about/");
+export const metadata = pageMeta("About · Arrow Flow", "The idea behind Arrow Flow, a silhouette arrow puzzle where the shape is the level. Design principles, studio info and credits.", "/about/"); 
 
+// TODO: Update the content to reflect the new game
 export default function AboutPage() {
   return (
     <>

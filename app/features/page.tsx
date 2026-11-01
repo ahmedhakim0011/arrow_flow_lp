@@ -6,7 +6,7 @@ import { BoardCard } from '@/components/BoardCard';
 import { Raw } from '@/components/Pic';
 import { StoreButtons } from '@/components/StoreButtons';
 
-export const metadata = pageMeta("Features · Arrow Flow", "Everything inside Arrow Flow: the tap-and-slide arrow mechanic, 100 handcrafted silhouettes, four difficulty tiers, hearts and stars, hints, daily streaks and a glassy neon look.", "/features/");
+export const metadata = pageMeta("Features · Arrow Flow", "Everything inside Arrow Flow: the tap-and-slide arrow mechanic, unlimited handcrafted silhouettes, four difficulty tiers, hearts and stars, hints, daily streaks and a glassy neon look.", "/features/");
 
 export default function FeaturesPage() {
   return (
@@ -43,27 +43,27 @@ export default function FeaturesPage() {
   <div className="wrap">
     <div className="section-head reveal up">
       <span className="eyebrow">Levels</span>
-      <Kx as="h2" text={"100 pictures, each one {cyan|handcrafted}"} />
+      <Kx as="h2" text={"Unlimited pictures, each one {cyan|handcrafted}"} />
       <p>No filler boards and no repeats. Every level is its own silhouette, ordered from chunky and simple to thin and tricky.</p>
     </div>
     <div className="stats reveal up">
-      <div className="stat"><b><Count to={100} /></b><span>silhouettes</span></div>
+      <div className="stat"><b>∞</b><span>silhouettes</span></div>
       <div className="stat"><b><Count to={438} /></b><span>arrows in the biggest board</span></div>
       <div className="stat"><b><Count to={3} /></b><span>hearts every try</span></div>
       <div className="stat"><b><Count to={0} /></b><span>timers</span></div>
     </div>
-    <div className="table-wrap reveal up" style={{ marginTop: '32px' }} tabIndex={0} role="region" aria-label="What the 100 levels are made of">
+    <div className="table-wrap reveal up" style={{ marginTop: '32px' }} tabIndex={0} role="region" aria-label="What the silhouettes are made of">
       <table>
         <caption className="sr-only">Silhouette categories</caption>
-        <thead><tr><th scope="col">Category</th><th scope="col">Levels</th><th scope="col">Examples</th></tr></thead>
+        <thead><tr><th scope="col">Category</th><th scope="col">Mix</th><th scope="col">Examples</th></tr></thead>
         <tbody>
-          <tr><td>Objects</td><td>40</td><td>Hammer, anchor, guitar, crown, hourglass</td></tr>
-          <tr><td>Animals</td><td>22</td><td>Kangaroo, llama, fox, elephant</td></tr>
-          <tr><td>Sea life</td><td>13</td><td>Sea turtle, seahorse, whale, octopus</td></tr>
-          <tr><td>Birds</td><td>12</td><td>Flamingo, ostrich, hawk, swan</td></tr>
-          <tr><td>Insects</td><td>6</td><td>Dragonfly, ant, spider, butterfly</td></tr>
-          <tr><td>Reptiles</td><td>4</td><td>Cobra, turtle, lizard, snake</td></tr>
-          <tr><td>Dinosaurs</td><td>3</td><td>Parasaurolophus, sauropod, T-Rex</td></tr>
+          <tr><td>Objects</td><td>Most</td><td>Hammer, anchor, guitar, crown, hourglass</td></tr>
+          <tr><td>Animals</td><td>Many</td><td>Kangaroo, llama, fox, elephant</td></tr>
+          <tr><td>Sea life</td><td>Plenty</td><td>Sea turtle, seahorse, whale, octopus</td></tr>
+          <tr><td>Birds</td><td>Plenty</td><td>Flamingo, ostrich, hawk, swan</td></tr>
+          <tr><td>Insects</td><td>Some</td><td>Dragonfly, ant, spider, butterfly</td></tr>
+          <tr><td>Reptiles</td><td>Some</td><td>Cobra, turtle, lizard, snake</td></tr>
+          <tr><td>Dinosaurs</td><td>A few</td><td>Parasaurolophus, sauropod, T-Rex</td></tr>
         </tbody>
       </table>
     </div>
@@ -78,10 +78,10 @@ export default function FeaturesPage() {
       <p>Arrow Flow starts on the Hard tier, and the boards only get denser from there. The deeper the blocking chains, the more you have to plan the order.</p>
     </div>
     <div className="grid grid-4">
-      <div className="panel tier reveal"><img src="/img/badges/badge_hard_512.webp" width="112" height="112" alt="" loading="lazy" /><h3>Hard</h3><span className="range">Levels 1–20</span><p style={{ marginTop: '12px' }}>100–214 arrows. Starts with the Hammer, ends with the Turtle.</p></div>
-      <div className="panel tier reveal" data-d="1"><img src="/img/badges/badge_expert_512.webp" width="112" height="112" alt="" loading="lazy" /><h3>Expert</h3><span className="range">Levels 21–50</span><p style={{ marginTop: '12px' }}>222–303 arrows. Duck to Palm Tree.</p></div>
-      <div className="panel tier reveal" data-d="2"><img src="/img/badges/badge_master_512.webp" width="112" height="112" alt="" loading="lazy" /><h3>Master</h3><span className="range">Levels 51–80</span><p style={{ marginTop: '12px' }}>307–346 arrows. Cat to Dolphin.</p></div>
-      <div className="panel tier reveal" data-d="3"><img src="/img/badges/badge_nightmare_512.webp" width="112" height="112" alt="" loading="lazy" /><h3>Nightmare</h3><span className="range">Levels 81–100</span><p style={{ marginTop: '12px' }}>348–438 arrows. Poodle to the Hourglass finale.</p></div>
+      <div className="panel tier reveal"><img src="/img/badges/badge_hard_512.webp" width="112" height="112" alt="" loading="lazy" /><h3>Hard</h3><span className="range">Starter boards</span><p style={{ marginTop: '12px' }}>100–214 arrows. Starts with the Hammer, ends with the Turtle.</p></div>
+      <div className="panel tier reveal" data-d="1"><img src="/img/badges/badge_expert_512.webp" width="112" height="112" alt="" loading="lazy" /><h3>Expert</h3><span className="range">Growing boards</span><p style={{ marginTop: '12px' }}>222–303 arrows. Duck to Palm Tree.</p></div>
+      <div className="panel tier reveal" data-d="2"><img src="/img/badges/badge_master_512.webp" width="112" height="112" alt="" loading="lazy" /><h3>Master</h3><span className="range">Dense boards</span><p style={{ marginTop: '12px' }}>307–346 arrows. Cat to Dolphin.</p></div>
+      <div className="panel tier reveal" data-d="3"><img src="/img/badges/badge_nightmare_512.webp" width="112" height="112" alt="" loading="lazy" /><h3>Nightmare</h3><span className="range">Giant boards</span><p style={{ marginTop: '12px' }}>348–438 arrows. Poodle to the Hourglass finale.</p></div>
     </div>
   </div>
 </section>
@@ -108,11 +108,11 @@ export default function FeaturesPage() {
     <div className="reveal">
       <span className="eyebrow">Look and feel</span>
       <Kx as="h2" text={"Glass, glow and a {night-time} palette"} />
-      <p>The whole game lives on a deep indigo-black canvas, with thin cyan and pink arrows that glow like neon tubes. Hearts, gems, stars and badges are glossy 3D enamel that pops against the dark.</p>
+      <p>The whole game lives on a warm cream canvas, with clay and bronze arrows that read like inked lines. Hearts, gems, stars and badges are soft clay forms with a gentle shadow.</p>
       <p>When the last arrow leaves, the dots fill in and the finished picture lights up in a blue-to-pink gradient. That moment is the whole game.</p>
       <p><Link className="btn btn--ghost" href="/screenshots/">See it in the gallery <span className="arr" aria-hidden="true">→</span></Link></p>
     </div>
-    <div className="reveal" data-d="1"><div className="phone phone--lg phone--float"><Raw name="game_26" alt="In-app level 26, a rooster silhouette of neon arrows with three hearts and 232 arrows left" /></div></div>
+    <div className="reveal" data-d="1"><div className="phone phone--lg phone--float"><Raw name="game" alt="In-app level 2, the Dragonfly, drawn in clay and bronze arrows with three hearts and 126 arrows left" /></div></div>
   </div>
 </section>
 

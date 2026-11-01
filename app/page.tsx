@@ -8,11 +8,11 @@ import { PresentedBy } from '@/components/Maker';
 import { OsHint, StoreButtons } from '@/components/StoreButtons';
 import { SITE_URL } from '@/config';
 
-export const metadata = pageMeta("Arrow Flow · Slide the arrows. Reveal the picture.", "Arrow Flow is a calm silhouette puzzle for iPhone and Android. Tap arrows to slide them free, clear the board and reveal a hidden picture. 100 handcrafted levels, no timers.", "/");
+export const metadata = pageMeta("Arrow Flow · Slide the arrows. Reveal the picture.", "Arrow Flow is a calm silhouette puzzle for iPhone and Android. Tap arrows to slide them free, clear the board and reveal a hidden picture. unlimited silhouettes, no timers.", "/");
 
 const jsonLd = {
   '@context': 'https://schema.org', '@type': ['MobileApplication', 'VideoGame'], name: 'Arrow Flow',
-  description: 'A calm silhouette puzzle. Tap arrows to slide them off the board and reveal the hidden picture. 100 handcrafted levels, no timers.',
+  description: 'A calm silhouette puzzle. Tap arrows to slide them off the board and reveal the hidden picture. unlimited silhouettes, no timers.',
   applicationCategory: 'GameApplication', author: { '@type': 'Organization', name: 'ahmedbuildapps.com', url: 'https://ahmedbuildapps.com' }, genre: 'Puzzle', operatingSystem: 'iOS, Android', gamePlatform: ['iOS', 'Android'],
   playMode: 'SinglePlayer', inLanguage: 'en', image: `${SITE_URL}/img/brand/og-image.jpg`, url: `${SITE_URL}/`,
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
@@ -24,12 +24,12 @@ export default function IndexPage() {
 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 <section className="hero">
   <span className="orb orb--a" aria-hidden="true" /><span className="orb orb--b" aria-hidden="true" />
-  <div className="streaks" aria-hidden="true"><i style={{ ['--y' as string]: '12%', ['--c' as string]: '#35E6FF', ['--s' as string]: '11s', ['--d' as string]: '0s', ['--w' as string]: '160px' }} /><i style={{ ['--y' as string]: '28%', ['--c' as string]: '#FF4FB8', ['--s' as string]: '14s', ['--d' as string]: '3s', ['--w' as string]: '110px' }} /><i style={{ ['--y' as string]: '47%', ['--c' as string]: '#8A5BFF', ['--s' as string]: '12s', ['--d' as string]: '6s', ['--w' as string]: '190px' }} /><i style={{ ['--y' as string]: '63%', ['--c' as string]: '#14C8FF', ['--s' as string]: '16s', ['--d' as string]: '1.5s', ['--w' as string]: '130px' }} /><i style={{ ['--y' as string]: '78%', ['--c' as string]: '#FF4FB8', ['--s' as string]: '13s', ['--d' as string]: '8s', ['--w' as string]: '170px' }} /><i style={{ ['--y' as string]: '90%', ['--c' as string]: '#35E6FF', ['--s' as string]: '15s', ['--d' as string]: '4.5s', ['--w' as string]: '100px' }} /></div>
+  <div className="streaks" aria-hidden="true"><i style={{ ['--y' as string]: '12%', ['--c' as string]: '#6E5646', ['--s' as string]: '11s', ['--d' as string]: '0s', ['--w' as string]: '160px' }} /><i style={{ ['--y' as string]: '28%', ['--c' as string]: '#B36B4E', ['--s' as string]: '14s', ['--d' as string]: '3s', ['--w' as string]: '110px' }} /><i style={{ ['--y' as string]: '47%', ['--c' as string]: '#8E5039', ['--s' as string]: '12s', ['--d' as string]: '6s', ['--w' as string]: '190px' }} /><i style={{ ['--y' as string]: '63%', ['--c' as string]: '#D9A441', ['--s' as string]: '16s', ['--d' as string]: '1.5s', ['--w' as string]: '130px' }} /><i style={{ ['--y' as string]: '78%', ['--c' as string]: '#B36B4E', ['--s' as string]: '13s', ['--d' as string]: '8s', ['--w' as string]: '170px' }} /><i style={{ ['--y' as string]: '90%', ['--c' as string]: '#6E5646', ['--s' as string]: '15s', ['--d' as string]: '4.5s', ['--w' as string]: '100px' }} /></div>
   <div className="wrap split">
     <div>
       <span className="eyebrow">Satisfying puzzle</span>
       <Kx as="h1" chars text={"Tap. Slide. Feel the {Flow}"} />
-      <p className="lead">Slide the arrows free and reveal the hidden silhouette. 100 handcrafted pictures, 3 hearts, zero timers.</p>
+      <p className="lead">Slide the arrows free and reveal the hidden silhouette. Unlimited handcrafted pictures, 3 hearts, zero timers.</p>
       <StoreButtons />
       <OsHint />
       <p className="hero-note"><Link href="/how-to-play/">New here? See how it plays →</Link></p>
@@ -64,7 +64,7 @@ export default function IndexPage() {
       <Kx as="h2" text={"Quiet brain work with a {big payoff}"} />
     </div>
     <div className="grid grid-3">
-      <article className="panel panel--hover reveal pop"><span className="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.100L3.200 9.500l6.100-.9z"/></svg></span><h3>100 hidden pictures</h3><p>Hammer, llama, whale, hourglass. Every level is a different animal or object made of arrows.</p></article>
+      <article className="panel panel--hover reveal pop"><span className="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.100L3.200 9.500l6.100-.9z"/></svg></span><h3>Unlimited hidden pictures</h3><p>Hammer, llama, whale, hourglass. Every level is a different animal or object made of arrows.</p></article>
       <article className="panel panel--hover reveal pop" data-d="1"><span className="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/><path d="M4 4l16 16"/></svg></span><h3>No timers</h3><p>Think as long as you like. Nothing counts down, so every move is a choice and not a panic.</p></article>
       <article className="panel panel--hover reveal pop" data-d="2"><span className="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-9-9.2C1.800 7.600 3.600 4 7 4c2 0 3.400 1.100 5 3 1.600-1.900 3-3 5-3 3.400 0 5.200 3.600 4 6.800C19 15.600 12 20 12 20z"/></svg></span><h3>Hearts and stars</h3><p>Three hearts per try. A blocked tap costs one, and your hearts left become your stars.</p></article>
       <article className="panel panel--hover reveal pop"><span className="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.500 10.900c.7.600 1 1.300 1 2.100h5c0-.8.300-1.500 1-2.100A6 6 0 0012 3z"/></svg></span><h3>A hint when you're stuck</h3><p>Tap the lightbulb and an arrow with a clear path starts to glow.</p></article>
@@ -82,12 +82,12 @@ export default function IndexPage() {
       <Kx as="h2" text={"Neon arrows on a {cyan|night-sky} board"} />
     </div>
     <div className="rail" role="list" aria-label="Game screenshots">
-      <Link className="shot" role="listitem" href="/screenshots/"><Phone name="game_19" alt="Level 19, a llama silhouette made of neon pink and blue arrows, with three hearts and 209 arrows left" /></Link>
-      <Link className="shot" role="listitem" href="/screenshots/"><Phone name="reveal" alt="Level 26, a rooster revealed as a glowing purple and pink silhouette after clearing every arrow" /></Link>
-      <Link className="shot" role="listitem" href="/screenshots/"><Phone name="game_100" alt="Level 100, an hourglass made of 438 arrows on the Nightmare tier" /></Link>
-      <Link className="shot" role="listitem" href="/screenshots/"><Phone name="blocked" alt="Level 3, a wrench silhouette with one blocked arrow flashing red and two hearts left" /></Link>
-      <Link className="shot" role="listitem" href="/screenshots/"><Phone name="complete" alt="The level complete sheet with three gold stars and the gems earned" /></Link>
-      <Link className="shot" role="listitem" href="/screenshots/"><Phone name="map" alt="Level select card for level 24 in the Expert tier with a mystery silhouette and a Play button" /></Link>
+      <Link className="shot" role="listitem" href="/screenshots/"><Phone name="game" alt="Level 2, the Dragonfly: 126 arrows in clay and bronze with three hearts" /></Link>
+      <Link className="shot" role="listitem" href="/screenshots/"><Phone name="reveal" alt="The Dragonfly silhouette being revealed in clay after the last arrow is cleared" /></Link>
+      <Link className="shot" role="listitem" href="/screenshots/"><Phone name="levels" alt="Level select card for level 3 with a mystery wrench silhouette" /></Link>
+      <Link className="shot" role="listitem" href="/screenshots/"><Phone name="blocked" alt="A blocked arrow flashing red with one heart lost" /></Link>
+      <Link className="shot" role="listitem" href="/screenshots/"><Phone name="complete" alt="The level complete sheet: You revealed Dragonfly with three stars and 15 gems" /></Link>
+      <Link className="shot" role="listitem" href="/screenshots/"><Phone name="streak" alt="The daily streak screen with a streak badge and weekly tracker" /></Link>
     </div>
     <p style={{ marginTop: '16px' }}><Link className="btn btn--ghost" href="/screenshots/">Open the gallery <span className="arr" aria-hidden="true">→</span></Link></p>
   </div>
@@ -101,10 +101,10 @@ export default function IndexPage() {
       <p>Four tiers of handmade boards, from 100 arrows in the first level to 438 in the last.</p>
     </div>
     <div className="grid grid-4">
-      <div className="panel tier reveal"><img src="/img/badges/badge_hard_512.webp" width="112" height="112" alt="" loading="lazy" /><h3>Hard</h3><span className="range">Levels 1–20</span></div>
-      <div className="panel tier reveal" data-d="1"><img src="/img/badges/badge_expert_512.webp" width="112" height="112" alt="" loading="lazy" /><h3>Expert</h3><span className="range">Levels 21–50</span></div>
-      <div className="panel tier reveal" data-d="2"><img src="/img/badges/badge_master_512.webp" width="112" height="112" alt="" loading="lazy" /><h3>Master</h3><span className="range">Levels 51–80</span></div>
-      <div className="panel tier reveal" data-d="3"><img src="/img/badges/badge_nightmare_512.webp" width="112" height="112" alt="" loading="lazy" /><h3>Nightmare</h3><span className="range">Levels 81–100</span></div>
+      <div className="panel tier reveal"><img src="/img/badges/badge_hard_512.webp" width="112" height="112" alt="" loading="lazy" /><h3>Hard</h3><span className="range">Starter boards</span></div>
+      <div className="panel tier reveal" data-d="1"><img src="/img/badges/badge_expert_512.webp" width="112" height="112" alt="" loading="lazy" /><h3>Expert</h3><span className="range">Growing boards</span></div>
+      <div className="panel tier reveal" data-d="2"><img src="/img/badges/badge_master_512.webp" width="112" height="112" alt="" loading="lazy" /><h3>Master</h3><span className="range">Dense boards</span></div>
+      <div className="panel tier reveal" data-d="3"><img src="/img/badges/badge_nightmare_512.webp" width="112" height="112" alt="" loading="lazy" /><h3>Nightmare</h3><span className="range">Giant boards</span></div>
     </div>
 
     <div className="grid grid-3" style={{ marginTop: '32px' }}>
@@ -142,7 +142,7 @@ export default function IndexPage() {
         <p style={{ color: '#fff' }}>Your first board takes about a minute. The picture underneath is worth it.</p>
         <StoreButtons />
       </div>
-      <img src="/img/brand/feature-512.webp" width="512" height="250" alt="Arrow Flow logo with two phones showing llama and bell levels" loading="lazy" style={{ borderRadius: '20px', boxShadow: '0 20px 50px rgba(0,0,0,.5)' }} />
+      <img src="/img/brand/feature-512.webp" width="512" height="250" alt="Arrow Flow logo and tagline on a warm cream canvas" loading="lazy" style={{ borderRadius: '20px', boxShadow: '0 20px 50px rgba(92,74,62,.3)' }} />
     </div>
   </div>
 </section>

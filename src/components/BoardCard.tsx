@@ -10,7 +10,7 @@ import { useId, useMemo, useRef, useState } from 'react';
 type Cell = number[];
 export type BoardData = { cols: number; rows: number; name: string; intro: string; arrows: Cell[][] };
 const S = 60;
-const COLORS = ['#35E6FF', '#FF4FB8', '#8A5BFF', '#14C8FF'];
+const COLORS = ['#6E5646', '#B36B4E', '#8E5039', '#D9A441'];
 const DIRNAME: Record<string, string> = { '1,0': 'right', '-1,0': 'left', '0,1': 'down', '0,-1': 'up' };
 
 const dirOf = (a: Cell[]) => { const p = a[a.length - 2], q = a[a.length - 1]; return { x: q[0] - p[0], y: q[1] - p[1] }; };
@@ -104,7 +104,7 @@ export function BoardCard({ board, label, ariaLabel, hearts: useHearts = true, h
         role="group" aria-label={ariaLabel}>
         <defs>
           <linearGradient id={gid} x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stopColor="#35A0FF" /><stop offset=".55" stopColor="#8A5BFF" /><stop offset="1" stopColor="#FF3FB4" />
+            <stop offset="0" stopColor="#6E5646" /><stop offset=".55" stopColor="#8E5039" /><stop offset="1" stopColor="#B36B4E" />
           </linearGradient>
         </defs>
         <g>{arrows.flatMap((a, i) => a.map((c) => (
