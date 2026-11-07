@@ -27,7 +27,7 @@ export default function TermsPage() {
           <p>We grant you a personal, non-exclusive, non-transferable, revocable licence to install and play the Game on devices you own or control, for non-commercial use. You may not copy, modify, reverse engineer, resell or redistribute the Game, except where the law allows it.</p>
 
           <h2>3. In-game items, ads and purchases</h2>
-          <p>Gems and other in-game items have no cash value, can&apos;t be exchanged for money and can&apos;t be transferred. Arrow Flow is currently free to play with no ads and no purchases. If we add ads or paid items in a future version, we&apos;ll update these terms first. Purchases would be handled by Apple or Google under their rules, including their refund policies.</p>
+          <p>Gems and other in-game items have no cash value, can&apos;t be exchanged for money and can&apos;t be transferred. Arrow Flow is free to play and supported by ads from Google AdMob, shown between levels; you can also choose to watch a video ad for an extra heart or a hint. There are no purchases. If we add paid items in a future version, we&apos;ll update these terms first. See the <Link href="/privacy/">privacy policy</Link> for how ads use data. Purchases would be handled by Apple or Google under their rules, including their refund policies.</p>
 
           <h2>4. Intellectual property</h2>
           <p>The Game, its name, logo and original artwork belong to ahmedbuildapps.com or its licensors. Third-party artwork is credited on the <Link href="/about/">About page</Link>, and those works remain under their own licences.</p>
