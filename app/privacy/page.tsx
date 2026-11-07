@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { EmailLink } from '@/components/EmailLink';
 import { pageMeta } from '@/lib/meta';
 
-export const metadata = pageMeta('Privacy policy · Arrow Flow', 'How Arrow Flow handles your data: progress stays on your device; the game shows ads through Google AdMob, with child-safe ads for younger players.', '/privacy/');
+export const metadata = pageMeta('Privacy policy · Arrow Flow', 'How Arrow Flow handles your data: progress stays on your device; the game shows ads through Google AdMob, with child-safe ads for younger players, and uses Google Analytics for Firebase only for players aged 13 and over.', '/privacy/');
 
 export default function PrivacyPage() {
   return (
@@ -43,27 +43,31 @@ export default function PrivacyPage() {
           <p>If you are in the European Economic Area, the United Kingdom or Switzerland, the game asks for your consent through Google&apos;s consent message before any personalized ads are shown. If you are in a US state with a consumer privacy law, you can opt out of the &ldquo;sale&rdquo; or &ldquo;sharing&rdquo; of personal information for advertising. Where these choices apply, you can change them at any time in the game under <strong>Settings &rarr; Privacy choices</strong>.</p>
           <p>You can also reset or delete your device&apos;s advertising ID, or opt out of personalized ads, in your phone&apos;s settings (on Android: Settings &rarr; Google &rarr; Ads, or Settings &rarr; Privacy &rarr; Ads, depending on the device).</p>
 
-          <h2>6. Game settings file</h2>
-          <p>The game may download a small settings file from this website (for example to adjust how often ads are shown or to switch ads off). That request does not include any identifier or game data. Like any web request, it reaches our host, which may keep standard server logs (see section 7).</p>
+          <h2>6. Game analytics (players aged 13 and over)</h2>
+          <p>For players who say they are 13 or older, the game uses <strong>Google Analytics for Firebase</strong> to understand how the game is played (for example which levels are finished, failed or replayed, and how often ads are shown, loaded or skipped). It collects app interactions, an app instance identifier, device and app information, and approximate location derived from your IP address. It does <strong>not</strong> collect the advertising ID, and this data is not used for advertising or ad personalization.</p>
+          <p>Analytics is <strong>off</strong> for players under 13 and for anyone who skips the age question. In the EEA, the UK and Switzerland it is also off unless you consent in the consent message. Google processes this data under the <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy and security terms</a>.</p>
 
-          <h2>7. This website</h2>
+          <h2>7. Game settings file</h2>
+          <p>The game may download a small settings file from this website (for example to adjust how often ads are shown or to switch ads off). That request does not include any identifier or game data. Like any web request, it reaches our host, which may keep standard server logs (see section 8).</p>
+
+          <h2>8. This website</h2>
           <p>This website doesn&apos;t use cookies, advertising trackers or analytics. Our host may keep standard server logs (such as IP address and pages requested) for security and reliability. The contact form has no server: it opens a draft in your own email app, and we only receive what you choose to send. We use it to reply to you and nothing else.</p>
 
-          <h2>8. What we do not collect</h2>
-          <p>We do not run accounts, chat or user-generated content, and the game contains no analytics or crash-reporting software and no in-app purchases. We do not receive or store your name, email, contacts, precise location or birth date from the game. The app stores (Google Play and the Apple App Store) may collect their own data when you download or update the game, under their own privacy policies.</p>
-          <p>If we add analytics, purchases or other services, we will update this policy and the store privacy labels before that version is released.</p>
+          <h2>9. What we do not collect</h2>
+          <p>We do not run accounts, chat or user-generated content, and the game contains no crash-reporting software and no in-app purchases. Children under 13 and players who skip the age question are never included in analytics. We do not receive or store your name, email, contacts, precise location or birth date from the game. The app stores (Google Play and the Apple App Store) may collect their own data when you download or update the game, under their own privacy policies.</p>
+          <p>If we add purchases or other services, we will update this policy and the store privacy labels before that version is released.</p>
 
-          <h2>9. Children</h2>
-          <p>Arrow Flow is made for all ages. We do not knowingly collect personal information from children. Players who say they are under 13, and players who skip the age question, only receive child-directed, non-personalized, general-audience ads from family-certified ad sources, and the advertising ID is not used for them. Parents who have questions, or who believe their child has sent us personal information by email, can contact us at <EmailLink /> and we will delete it.</p>
+          <h2>10. Children</h2>
+          <p>Arrow Flow is made for all ages. We do not knowingly collect personal information from children. Players who say they are under 13, and players who skip the age question, only receive child-directed, non-personalized, general-audience ads from family-certified ad sources, and the advertising ID is not used for them. Game analytics is switched off for them. Parents who have questions, or who believe their child has sent us personal information by email, can contact us at <EmailLink /> and we will delete it.</p>
 
-          <h2>10. Your rights</h2>
+          <h2>11. Your rights</h2>
           <p>We don&apos;t hold personal data about you on our side, so requests to access, correct or delete it will usually have nothing to act on. For data collected by Google for advertising, use the privacy choices in the game, your device&apos;s ad settings and Google&apos;s tools linked above. If you have emailed us, you can ask us at any time to see or delete that correspondence. If you are in the EEA, UK or a US state with a privacy law, you have the rights your local law gives you (such as access, deletion, objection and opt-out), and you can complain to your local data protection authority.</p>
           <p>You can remove all game data from your device at any time by resetting progress in Settings or by uninstalling the game.</p>
 
-          <h2>11. Changes to this policy</h2>
+          <h2>12. Changes to this policy</h2>
           <p>We&apos;ll update this page when the game or our practices change and revise the date at the top.</p>
 
-          <h2>12. Contact</h2>
+          <h2>13. Contact</h2>
           <p>Questions about privacy? Email <EmailLink /> or use the <Link href="/contact/">contact page</Link>.</p>
         </div>
       </section>
