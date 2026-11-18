@@ -9,13 +9,12 @@ const image = '/img/brand/og-image.jpg';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: { default: `${SITE_NAME} · Slide the arrows. Reveal the picture.`, template: `%s · ${SITE_NAME}` },
-  description: 'Arrow Flow is a calm silhouette puzzle for iPhone and Android. Tap arrows to slide them free and reveal a hidden picture.',
+  description: 'Arrow Flow is a calm silhouette puzzle for Android. Tap arrows to slide them free and reveal a hidden picture.',
   manifest: '/manifest.webmanifest',
   openGraph: {
     type: 'website', siteName: SITE_NAME, images: [{ url: image, width: 1200, height: 630, alt: 'Arrow Flow: slide the arrows, reveal the picture.' }],
   },
   twitter: { card: 'summary_large_image', images: [image] },
-  // Once the iOS listing exists, add  itunes: { appId: 'YOUR_APP_ID' }  for Safari's smart banner.
 };
 export const viewport: Viewport = { themeColor: '#F7F2EC', width: 'device-width', initialScale: 1, viewportFit: 'cover' };
 

@@ -27,7 +27,7 @@ export function Footer() {
         </div>
         <div className="foot-note">
           <p>© {new Date().getFullYear()} Arrow Flow. All rights reserved.</p>
-          <p>Apple and App Store are trademarks of Apple Inc. Google Play is a trademark of Google LLC.</p>
+          <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
         </div>
       </div>
     </footer>

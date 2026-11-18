@@ -433,8 +433,6 @@ select option{background:#141422}
 .store-badge{--bh:48px;position:relative;display:block;height:var(--bh);border-radius:9px;transition:transform var(--t-fast) var(--ease),translate 220ms var(--ease-out),filter var(--t-fast),box-shadow var(--t-fast)}
 .store-badge:hover{filter:brightness(1.12);box-shadow:var(--glow-v)}
 .store-badge:active{transform:scale(.96)}
-.store-badge--apple{aspect-ratio:3/1}
-.store-badge--apple img{display:block;width:100%;height:100%}
 /* Google's PNG carries built-in padding (562x166 art inside 646x250): crop it to the art so both badges match */
 .store-badge--google{aspect-ratio:562/166;overflow:hidden}
 .store-badge--google img{position:absolute;width:114.95%;max-width:none;height:auto;left:-7.47%;top:-25.3%}

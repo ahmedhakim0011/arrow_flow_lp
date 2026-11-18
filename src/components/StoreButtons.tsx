@@ -9,39 +9,26 @@ export function detectOs(): Os {
   return /Android/i.test(ua) ? 'android' : 'desktop';
 }
 
-/** Official badges (Apple SVG, Google Play PNG), both shown at the same visible height. */
+/** Official Google Play badge (Arrow Flow is Android-only for now). */
 export function StoreButtons() {
-  const [os, setOs] = useState<Os>('desktop');
-  useEffect(() => setOs(detectOs()), []);
-  const items = [
-    { k: 'ios', label: 'Download on the App Store', cls: 'store-badge store-badge--apple', src: '/img/store/app-store.svg', w: 120, h: 40 },
-    { k: 'android', label: 'Get it on Google Play', cls: 'store-badge store-badge--google', src: '/img/store/google-play.png', w: 646, h: 250 },
-  ] as const;
-  const ordered = os === 'android' ? [items[1], items[0]] : items;
   return (
     <div className="stores">
-      {ordered.map(({ k, label, cls, src, w, h }) => {
-        const url = STORES[k];
-        return (
-          <a key={k} className={cls} data-store={k} aria-label={url ? label : `${label} (coming soon)`}
-            href={url || '/download/#stores'} {...(url ? { target: '_blank', rel: 'noopener' } : { title: 'Store link not set yet (edit src/config.ts)' })}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={src} width={w} height={h} alt="" />
-          </a>
-        );
-      })}
-      {!STORES.ios && !STORES.android && <p className="stores-soon">Store links coming soon</p>}
+      <a className="store-badge store-badge--google" data-store="android" aria-label="Get it on Google Play"
+        href={STORES.android} target="_blank" rel="noopener">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/img/store/google-play.png" width={646} height={250} alt="" />
+      </a>
     </div>
   );
 }
 
 export function OsHint() {
-  const [t, setT] = useState('Free for iPhone and Android.');
+  const [t, setT] = useState('Free on Android.');
   useEffect(() => {
     const os = detectOs();
-    setT(os === 'ios' ? 'Looks like you are on iPhone or iPad, so the App Store is first.'
-      : os === 'android' ? 'Looks like you are on Android, so Google Play is first.'
-      : 'Playing on a computer? Open this page on your phone to get the game.');
+    setT(os === 'ios' ? 'Arrow Flow is on Android for now.'
+      : os === 'android' ? 'Free on Google Play.'
+      : 'Playing on a computer? Open this page on your Android phone to get the game.');
   }, []);
   return <p className="hero-note">{t}</p>;
 }

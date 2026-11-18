@@ -49,7 +49,7 @@ export default function FaqPage() {
         <details><summary>Does it work offline?</summary><div><p>Yes. It's fully playable without a connection.</p></div></details>
         <details><summary>Do I need an account?</summary><div><p>No. Progress, gems and settings are stored on your device.</p></div></details>
         <details><summary>Will my progress move to a new phone?</summary><div><p>Progress is stored locally on the device, so it does not transfer automatically. Cloud sync isn't part of the current version.</p></div></details>
-        <details><summary>Which devices are supported?</summary><div><p>iPhone and iPad (iOS 12 or later) and Android phones. See the <Link href="/download/">download page</Link> for the full requirements.</p></div></details>
+        <details><summary>Which devices are supported?</summary><div><p>Android phones and tablets running Android 7.0 or later. An iPhone version isn&apos;t available yet. See the <Link href="/download/">download page</Link> for the full requirements.</p></div></details>
         <details><summary>Can I turn off sound or vibration?</summary><div><p>Yes. Sound, music and haptics each have a switch in Settings.</p></div></details>
       </div>
     </div>

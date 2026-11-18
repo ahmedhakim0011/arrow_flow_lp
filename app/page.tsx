@@ -8,12 +8,12 @@ import { PresentedBy } from '@/components/Maker';
 import { OsHint, StoreButtons } from '@/components/StoreButtons';
 import { SITE_URL } from '@/config';
 
-export const metadata = pageMeta("Arrow Flow · Slide the arrows. Reveal the picture.", "Arrow Flow is a calm silhouette puzzle for iPhone and Android. Tap arrows to slide them free, clear the board and reveal a hidden picture. unlimited silhouettes, no timers.", "/");
+export const metadata = pageMeta("Arrow Flow · Slide the arrows. Reveal the picture.", "Arrow Flow is a calm silhouette puzzle for Android. Tap arrows to slide them free, clear the board and reveal a hidden picture. unlimited silhouettes, no timers.", "/");
 
 const jsonLd = {
   '@context': 'https://schema.org', '@type': ['MobileApplication', 'VideoGame'], name: 'Arrow Flow',
   description: 'A calm silhouette puzzle. Tap arrows to slide them off the board and reveal the hidden picture. unlimited silhouettes, no timers.',
-  applicationCategory: 'GameApplication', author: { '@type': 'Organization', name: 'ahmedbuildapps.com', url: 'https://ahmedbuildapps.com' }, genre: 'Puzzle', operatingSystem: 'iOS, Android', gamePlatform: ['iOS', 'Android'],
+  applicationCategory: 'GameApplication', author: { '@type': 'Organization', name: 'ahmedbuildapps.com', url: 'https://ahmedbuildapps.com' }, genre: 'Puzzle', operatingSystem: 'Android', gamePlatform: ['Android'],
   playMode: 'SinglePlayer', inLanguage: 'en', image: `${SITE_URL}/img/brand/og-image.jpg`, url: `${SITE_URL}/`,
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
 };
