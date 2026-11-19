@@ -18,7 +18,7 @@ export default function PrivacyPage() {
 
       <section className="section--tight">
         <div className="wrap narrow legal">
-          <p><strong>Last updated:</strong> November 7, 2026</p>
+          <p><strong>Last updated:</strong> November 19, 2026</p>
 
           <h2>1. Who we are</h2>
           <p>Arrow Flow is made and published by <a href="https://ahmedbuildapps.com" target="_blank" rel="noopener">ahmedbuildapps.com</a> (&ldquo;we&rdquo;, &ldquo;us&rdquo;). You can reach us at <EmailLink /> or through the <Link href="/contact/">contact page</Link>. We don&apos;t publish a postal address; email is the best way to get in touch.</p>
@@ -47,6 +47,10 @@ export default function PrivacyPage() {
           <p>For players who say they are 13 or older, the game uses <strong>Google Analytics for Firebase</strong> to understand how the game is played (for example which levels are finished, failed or replayed, and how often ads are shown, loaded or skipped). It collects app interactions, an app instance identifier, device and app information, and approximate location derived from your IP address. It does <strong>not</strong> collect the advertising ID, and this data is not used for advertising or ad personalization.</p>
           <p>Analytics is <strong>off</strong> for players under 13 and for anyone who skips the age question. In the EEA, the UK and Switzerland it is also off unless you consent in the consent message. Google processes this data under the <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy and security terms</a>.</p>
 
+          <h3>Meta ad measurement (players aged 13 and over, outside the EEA, UK and Switzerland)</h3>
+          <p>We advertise Arrow Flow on Facebook and Instagram. To measure those ads, the game includes the <strong>Meta App Events SDK</strong>. For players who say they are 13 or older and who are outside the EEA, the UK and Switzerland, it sends Meta the app install and launch, a few game events (a level finished or failed, a poster shared), the advertising ID, device and app information, and your IP address. Meta uses this to tell us how our ads perform, and may use it to show our ads to similar people. We send it with Meta&apos;s Limited Data Use setting, so in US states with privacy laws Meta only uses it as a service provider.</p>
+          <p>It is <strong>off</strong> for players under 13, for anyone who skips the age question, and for everyone in the EEA, the UK and Switzerland. You can reset or delete your advertising ID in your device settings. Meta handles this data under the <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta Privacy Policy</a>.</p>
+
           <h2>7. Game settings file</h2>
           <p>The game may download a small settings file from this website (for example to adjust how often ads are shown or to switch ads off). That request does not include any identifier or game data. Like any web request, it reaches our host, which may keep standard server logs (see section 8).</p>
 
@@ -54,11 +58,11 @@ export default function PrivacyPage() {
           <p>This website doesn&apos;t use cookies, advertising trackers or analytics. Our host may keep standard server logs (such as IP address and pages requested) for security and reliability. The contact form has no server: it opens a draft in your own email app, and we only receive what you choose to send. We use it to reply to you and nothing else.</p>
 
           <h2>9. What we do not collect</h2>
-          <p>We do not run accounts, chat or user-generated content, and the game contains no crash-reporting software and no in-app purchases. Children under 13 and players who skip the age question are never included in analytics. We do not receive or store your name, email, contacts, precise location or birth date from the game. The app stores (Google Play and the Apple App Store) may collect their own data when you download or update the game, under their own privacy policies.</p>
+          <p>We do not run accounts, chat or user-generated content, and the game contains no crash-reporting software and no in-app purchases. Children under 13 and players who skip the age question are never included in analytics or Meta ad measurement. We do not receive or store your name, email, contacts, precise location or birth date from the game. The app stores (Google Play and the Apple App Store) may collect their own data when you download or update the game, under their own privacy policies.</p>
           <p>If we add purchases or other services, we will update this policy and the store privacy labels before that version is released.</p>
 
           <h2>10. Children</h2>
-          <p>Arrow Flow is made for all ages. We do not knowingly collect personal information from children. Players who say they are under 13, and players who skip the age question, only receive child-directed, non-personalized, general-audience ads from family-certified ad sources, and the advertising ID is not used for them. Game analytics is switched off for them. Parents who have questions, or who believe their child has sent us personal information by email, can contact us at <EmailLink /> and we will delete it.</p>
+          <p>Arrow Flow is made for players aged 13 and over. We do not knowingly collect personal information from children. Players who say they are under 13, and players who skip the age question, only receive child-directed, non-personalized, general-audience ads from family-certified ad sources, and the advertising ID is not used for them. Game analytics and Meta ad measurement are switched off for them. Parents who have questions, or who believe their child has sent us personal information by email, can contact us at <EmailLink /> and we will delete it.</p>
 
           <h2>11. Your rights</h2>
           <p>We don&apos;t hold personal data about you on our side, so requests to access, correct or delete it will usually have nothing to act on. For data collected by Google for advertising, use the privacy choices in the game, your device&apos;s ad settings and Google&apos;s tools linked above. If you have emailed us, you can ask us at any time to see or delete that correspondence. If you are in the EEA, UK or a US state with a privacy law, you have the rights your local law gives you (such as access, deletion, objection and opt-out), and you can complain to your local data protection authority.</p>
